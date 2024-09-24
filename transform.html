@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Transform</title>
+    <style>
+        .transform{
+    display:grid;
+    grid-template-areas:
+    "img1 img2"
+    "img3 img4"
+    "img5 img6";
+    gap:10px;
+    padding:10px;
+    background-color: white;
+    width:auto;
+    background-color: hotpink;
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+
+.img1:hover{
+    transform:translateX(100px);
+    transform:translate3d(100px 100px 100px);
+    box-shadow:20px 10px 5px black;
+    height: 300px;
+    width: 250px;
+}
+.img2:hover{
+    transform:translatey(100px);
+    transform:translate3d(100px 100px 100px);
+    box-shadow:20px 10px 5px black;
+}
+.img3:hover{
+    transform:scaleX(1.2);
+    transform:translate3d(100px 100px 100px);
+    box-shadow:20px 10px 5px black;
+}
+.img4:hover{
+    transform:scaleY(1.2);
+    transform:translate3d(100px 100px 100px);
+    box-shadow:20px 10px 5px black;
+}
+.img5:hover{
+    transform:rotatex(45deg);
+    transform:translate3d(100px 100px 100px);
+    box-shadow:20px 10px 5px black;
+}
+.img6:hover{
+    transform:rotateY(45deg);
+    transform:translate3d(100px 100px 100px);
+    box-shadow:20px 10px 5px black;
+}
+    </style>
+</head>
+<body>
+    
+    <h1 style="color: mediumvioletred;">Hover images to see the Transform effects and 3d effects</h1>
+    <div class="transform">
+        <div class="img1">
+            <img src="./kitty1.jpg" width="700px" height="600px">
+
+        </div>
+
+        <div class="img2">
+            <img src="./kitty2.jpg" width="700pxpx" height="600px">
+
+        </div>
+
+        <div class="img3">
+            <img src="./kitty3.jpg" width="700px" height="600px">
+
+        </div>
+
+        <div class="img4">
+            <img src="./kitty4.jpg" width="700px" height="600px">
+
+        </div>
+
+        <div class="img5">
+            <img src="./kitty5.jpg" width="700px" height="600px">
+
+        </div>
+
+        <div class="img6">
+            <img src="./kitty6.jpg" width="700px" height="600px">
+
+        </div>
+
+    </div>
+</body>
+</html>
